@@ -3,12 +3,13 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-                <h2>Data Jumlah Tempat Wisata Di Kecamatan {{$nama->nama}}</h2>
+                <h2>Data Tempat Wisata Kecamatan {{$nama->nama}}</h2>
                 @if(isset($data))
                 <a href="/tempatwisata/create" class="btn btn-success">Tambah Data Baru</a>
                 @else
-                <a href="/tempatwisata/create" class="btn btn-success">Tambah Data Baru</a>
+                
                 @endif
+                 
             </div>
             <div class="card-body col-md-8">
             <table class="table">

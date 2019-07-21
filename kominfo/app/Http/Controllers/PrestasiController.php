@@ -51,7 +51,7 @@ class PrestasiController extends Controller
         $prestasi->kesenian=$request->input('kesenian');
         $prestasi->kebersihan=$request->input('kebersihan');
         $prestasi->save();
-        return redirect('/')->with('success', 'data Penduduk berhasil di simpan!');
+        return redirect('/')->with('success', 'data Prestasi berhasil di simpan!');
     }
 
     /**
@@ -112,7 +112,7 @@ class PrestasiController extends Controller
         $prestasi->kesenian=$request->input('kesenian');
         $prestasi->kebersihan=$request->input('kebersihan');
         $prestasi->save();
-        return redirect('/')->with('success', 'data Penduduk berhasil di simpan!');
+        return redirect('/')->with('success', 'data Prestasi berhasil di simpan!');
     }
 
     /**
@@ -125,6 +125,6 @@ class PrestasiController extends Controller
     {
         $prestasi= prestasi::find($id);
         $prestasi->delete();
-        return redirect('/')->with('success', 'data Penduduk berhasil di hapus!');
+        return redirect('/')->with('success', 'data Prestasi berhasil di hapus!');
     }
 }

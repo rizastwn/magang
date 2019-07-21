@@ -6,7 +6,7 @@
                 <h2>Tambah Data Jumlah Wisata di Kecamatan </h2>
             </div>
             <div class="card-body">
-                    <form action="/tempatwisata/" method="POST" name="form1">
+                    <form action="/tempatwisata" method="POST" name="form1">
                         {{ csrf_field() }}
                         <div class="form-group">
                                 <label  for="">Kecamatan</label>
