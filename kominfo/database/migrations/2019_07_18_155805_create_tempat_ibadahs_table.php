@@ -14,7 +14,7 @@ class CreateTempatIbadahsTable extends Migration
     public function up()
     {
         Schema::create('tempat_ibadahs', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->integer('idKecamatan');
             $table->integer('islam');
             $table->integer('kristenProstestan');

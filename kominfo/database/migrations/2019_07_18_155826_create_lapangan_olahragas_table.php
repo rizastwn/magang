@@ -14,7 +14,7 @@ class CreateLapanganOlahragasTable extends Migration
     public function up()
     {
         Schema::create('lapangan_olahragas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->integer('idKecamatan');
             $table->integer('sepakBola');
             $table->integer('futsal');

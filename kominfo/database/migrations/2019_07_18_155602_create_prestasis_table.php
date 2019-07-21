@@ -14,7 +14,7 @@ class CreatePrestasisTable extends Migration
     public function up()
     {
         Schema::create('prestasis', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->integer('idKecamatan');
             $table->integer('tahun');
             $table->integer('olahraga');

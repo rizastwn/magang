@@ -14,7 +14,7 @@ class CreateJumlahPenduduksTable extends Migration
     public function up()
     {
         Schema::create('jumlah_penduduks', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->integer('idKecamatan');
             $table->integer('tahun');
             $table->integer('islam');

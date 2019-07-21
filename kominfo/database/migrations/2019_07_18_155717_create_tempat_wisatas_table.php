@@ -14,7 +14,7 @@ class CreateTempatWisatasTable extends Migration
     public function up()
     {
         Schema::create('tempat_wisatas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->integer('idKecamatan');
             $table->integer('alam');
             $table->integer('edukasi');

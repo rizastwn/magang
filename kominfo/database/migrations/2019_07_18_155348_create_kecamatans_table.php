@@ -14,8 +14,12 @@ class CreateKecamatansTable extends Migration
     public function up()
     {
         Schema::create('kecamatans', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->string('nama');
+            $table->string('desa');
+            $table->string('dusun');
+            $table->string('rt');
+            $table->string('rw');
             $table->integer('luasWilayah');
             $table->timestamps();
         });

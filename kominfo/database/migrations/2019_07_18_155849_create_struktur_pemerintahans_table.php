@@ -14,7 +14,7 @@ class CreateStrukturPemerintahansTable extends Migration
     public function up()
     {
         Schema::create('struktur_pemerintahans', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->integer('id');
             $table->integer('idKecamatan');
             $table->integer('tahun');
             $table->integer('desa');
