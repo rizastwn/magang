@@ -38,9 +38,9 @@ class TempatIbadahController extends Controller
      */
     public function store(Request $request)
     {
-        $ibadah =  new tempatWisata();
+        $ibadah =  new tempatIbadah;
         $ibadah->idKecamatan=$request->input('idKecamatan');
-        $ibadah->islam=$request->input('alam');
+        $ibadah->islam=$request->input('islam');
         $ibadah->kristenProtestan=$request->input('kristenProtestan');
         $ibadah->kristenKatolik=$request->input('kristenKatolik');
         $ibadah->hindu=$request->input('hindu');
@@ -98,15 +98,15 @@ class TempatIbadahController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $ibadah = tempatWisata::find($id);
-        $ibadah->islam=$request->input('alam');
+        $ibadah = tempatIbadah::find($id);
+        $ibadah->islam=$request->input('islam');
         $ibadah->kristenProtestan=$request->input('kristenProtestan');
         $ibadah->kristenKatolik=$request->input('kristenKatolik');
         $ibadah->hindu=$request->input('hindu');
         $ibadah->buddha=$request->input('buddha');
         $ibadah->konghucu=$request->input('konghucu');
         $ibadah->save();
-        return redirect('/')->with('success', 'data Tempat Ibadah Telah Disimpan berhasil di simpan!');
+        return redirect('/')->with('success', 'data Tempat Ibadah Telah Disimpan !');
     }
 
     /**

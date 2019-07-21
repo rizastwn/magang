@@ -8,7 +8,7 @@
             <a class="btn btn-info" href="/tempatibadah/{{$item->id}}/edit">Edit Data</a>
 
             @else
-            <a href="/tempatwisata/create" class="btn btn-success">Tambah Data Baru</a>
+            <a href="/tempatibadah/create" class="btn btn-success">Tambah Data Baru</a>
             @endif
             </div>
             <div class="card-body col-md-8">

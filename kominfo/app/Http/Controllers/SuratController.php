@@ -37,7 +37,7 @@ class SuratController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    { 
         $surat =  new surat;
         $surat->tahun=$request->input('tahun');
         $surat->idKecamatan=$request->input('idKecamatan');

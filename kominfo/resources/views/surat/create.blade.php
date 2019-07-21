@@ -3,10 +3,10 @@
     <div class="container">
         <div class="card">
             <div class="card-header">
-
+            <h2>Tambah Data Surat </h2>
             </div>
             <div class="card-body">
-                    <form action="/prestasi" method="POST" name="form1">
+                    <form action="/surat" method="POST" name="form1">
                         {{ csrf_field() }}
                         <div class="form-group">
                             <label  for="">Kecamatan</label>

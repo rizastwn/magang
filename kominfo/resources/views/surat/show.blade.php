@@ -4,7 +4,7 @@
         <div class="card">
             <div class="card-header">
                 <h2>Jumlah Surat Masuk dan Keluar Kecamatan {{$nama->nama}}</h2>
-                
+                <a href="/surat/create" class="btn btn-info">tambah data baru</a>
             </div>
             <div class="card-body">
                 <table class="table">

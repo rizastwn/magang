@@ -5,7 +5,7 @@
             <div class="card-header">
                 <h2>Data Jumlah Tempat Wisata Di Kecamatan {{$nama->nama}}</h2>
                 @if(isset($data))
-                
+                <a href="/tempatwisata/create" class="btn btn-success">Tambah Data Baru</a>
                 @else
                 <a href="/tempatwisata/create" class="btn btn-success">Tambah Data Baru</a>
                 @endif

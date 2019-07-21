@@ -12,7 +12,7 @@
                         <label for="comment">Wisata Alam:</label>
                         <input type="number" value="{{$data->alam}}" class="form-control" name="alam">
                     <div>
-                    <div class="form-group">
+                     <div class="form-group">
                         <label for="comment">Wisata Edukasi:</label>
                         <input type="number" value="{{$data->edukasi}}" class="form-control" name="edukasi">
                     <div>

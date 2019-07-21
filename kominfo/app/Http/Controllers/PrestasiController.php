@@ -102,7 +102,7 @@ class PrestasiController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $prestasi =  new prestasi;
+        $prestasi =   prestasi::find($id);
         $prestasi->olahraga=$request->input('olahraga');
         $prestasi->tk=$request->input('tk');
         $prestasi->sd=$request->input('sd');

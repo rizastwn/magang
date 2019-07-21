@@ -62,7 +62,7 @@ class PendudukController extends Controller
         $data = DB::table('kecamatans')
             ->join('jumlah_penduduks', 'jumlah_penduduks.idKecamatan', '=', 'kecamatans.id')
             ->where([
-                ['jumlah_penduduks.idKecamatan', '=', $id],
+                ['jumlah_penduduks.idKecamatan', '=', $kecamatan->id],
             ])
             ->select('jumlah_penduduks.*')
             ->get();
